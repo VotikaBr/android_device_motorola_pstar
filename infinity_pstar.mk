@@ -8,7 +8,7 @@
 $(call inherit-product, device/motorola/pstar/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_pstar
+PRODUCT_NAME := infinity_pstar
 PRODUCT_DEVICE := pstar
 PRODUCT_MODEL := motorola edge 20 pro
 
@@ -18,3 +18,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=motorola/pstar_retail/pstar:13/T1RAS33.55-15-16-5/d9def9-6b8134:user/release-keys \
     DeviceProduct=pstar_retail \
     SystemName=pstar_retail
+
+
+# Maintainer Name
+INFINITY_MAINTAINER := VotikaBr
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := false
+
+# Whether Including Google Apps (Altere para false se preferir Vanilla)
+WITH_GAPPS := true

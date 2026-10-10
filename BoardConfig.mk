@@ -11,6 +11,9 @@ DEVICE_PATH := device/motorola/pstar
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := pstar
 
+# Allow proprietary ELF blobs copied through PRODUCT_COPY_FILES.
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Display
 TARGET_SCREEN_DENSITY := 400
 

@@ -26,6 +26,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libgui_shim_vendor
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    camera.disable_zsl_mode=1
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.camera.cfa.packagelist=com.motorola.coresettingsext,com.motorola.camera2,com.motorola.camera3,com.motorola.actions \
+    ro.com.google.lens.oem_camera_package=com.motorola.camera3 \
+    ro.product.motcameradesktop=1
+
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.physical.num=4 \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.motorola.camera3 \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.camera2,com.motorola.camera3,com.motorola.motocit \
+    vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings \
+    ro.vendor.hw.cam_variant=2 \
+    ro.vendor.hw.cam_variant_wb=2 \
+    vendor.display.enable_camera_smooth=1
+
 # Init
 PRODUCT_PACKAGES += \
     init.device.rc
@@ -43,3 +61,12 @@ PRODUCT_PACKAGES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/pstar/pstar-vendor.mk)
+
+# Maintainer Name
+INFINITY_MAINTAINER := VotikaBr
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := false
+
+# Whether Including Google Apps
+WITH_GAPPS := true

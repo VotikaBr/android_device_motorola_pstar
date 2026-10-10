@@ -66,7 +66,17 @@ vendor/lib64/libvidhance_face_stabilizer.so
 vendor/lib64/libvidhance_fbc.so
 vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
+vendor/lib64/libvidhance_zoom_stabilization.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+
+vendor/lib/libvidhance.so
+vendor/lib/libvidhance_active_ois.so
+vendor/lib/libvidhance_dmbr.so
+vendor/lib/libvidhance_face_stabilizer.so
+vendor/lib/libvidhance_fbc.so
+vendor/lib/libvidhance_horizon_correction.so
+vendor/lib/libvidhance_stabilizer.so
+vendor/lib/libvidhance_zoom_stabilization.so
 
 # Camera-components
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
@@ -135,6 +145,9 @@ vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.vidhance.node.ica.so
 vendor/lib64/camera/components/com.vidhance.node.processing.so
 vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
+vendor/lib/camera/components/com.vidhance.node.ica.so
+vendor/lib/camera/components/com.vidhance.node.processing.so
+vendor/lib/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
 vendor/lib64/com.qti.feature2.frameselect.so
@@ -159,6 +172,8 @@ vendor/etc/camera/dual_golden_tele.bin
 vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/mot_engine_config.bin
 vendor/etc/camera/vidhance_calibration
+vendor/etc/camera/vidhance_calibration_32
+vendor/etc/camera/camxoverridesettings.txt
 
 # Camera (Firmware)
 vendor/firmware/CAMERA_ICP.elf
