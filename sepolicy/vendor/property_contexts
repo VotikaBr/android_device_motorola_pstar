@@ -1,0 +1,3 @@
+# Camera & Stabilization properties
+vendor.vidhance.           u:object_r:vendor_camera_prop:s0
+persist.vendor.vidhance.   u:object_r:vendor_camera_prop:s0
